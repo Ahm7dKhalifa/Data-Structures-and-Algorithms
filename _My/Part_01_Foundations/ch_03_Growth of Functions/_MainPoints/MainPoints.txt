@@ -1,0 +1,75 @@
+b1 --> intro to algorithms books
+
+========================================
+1.what is Asymptotic notation ?
+========================================
+#q/a
+#b1 --> 43
+
+==========================================
+2.Asymptotic notation Types Diagram
+==========================================
+#q/a
+#b1 --> 45
+
+==========================================
+3.good video link to explain Asymptotic notation in arabic
+==========================================
+#https://www.youtube.com/watch?v=LNU2TwxjayA
+#q/a
+
+==========================================
+4.good video link to explain Asymptotic notation
+==========================================
+#https://www.youtube.com/watch?v=kS_gr2_-ws8&list=WL&index=149&t=0s
+#q/a
+
+==========================================
+5.good articles to explain Asymptotic notation from khanacademy
+==========================================
+#1- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation
+  2- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation
+  3- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/functions-in-asymptotic-notation
+  4- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
+  5- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-omega-notation
+
+#q/a
+
+==========================================
+6.good articles to explain Asymptotic notation in arabic
+==========================================
+#http://hosamabdelnaser.blogspot.com/2018/10/blog-post_37.html
+#q/a
+
+==========================================
+7.
+==========================================
+
+
+==========================================
+8.
+==========================================
+
+
+==========================================
+9.
+==========================================
+
+
+==========================================
+10.
+==========================================
+
+==========================================
+11.
+==========================================
+
+
+==========================================
+12.
+==========================================
+
+
+==========================================
+13.
+==========================================
