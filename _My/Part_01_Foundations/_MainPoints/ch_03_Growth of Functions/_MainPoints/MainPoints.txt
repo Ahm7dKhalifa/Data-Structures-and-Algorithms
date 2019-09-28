@@ -20,6 +20,7 @@ b1 --> intro to algorithms books
 
 ==========================================
 4.good video link to explain Asymptotic notation
+  - Rules of Asymptotic notation
 ==========================================
 #https://www.youtube.com/watch?v=kS_gr2_-ws8&list=WL&index=149&t=0s
 #q/a
@@ -27,7 +28,15 @@ b1 --> intro to algorithms books
 ==========================================
 5.good articles to explain Asymptotic notation from khanacademy
 ==========================================
-#1- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation
+# - big-theta-notation :
+       the running time is alwayes between two function f1 and f2 
+  - big-o-notation
+       the running time must be less than function f
+  - big-omega-notation
+       the running time must be bigger than function f
+  - functions in asymptotic notation
+
+# 1- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation
   2- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation
   3- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/functions-in-asymptotic-notation
   4- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
