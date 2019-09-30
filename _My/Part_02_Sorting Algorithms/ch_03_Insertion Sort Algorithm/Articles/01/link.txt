@@ -1,1 +1,6 @@
 https://www.interviewbit.com/tutorial/insertion-sort-algorithm/
+----------------
+- how it work ?
+- code
+- big(o)
+- space

@@ -1,1 +1,6 @@
 https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/tutorial/
+----------------
+- how it work ?
+- code
+- big(o)
+- space
