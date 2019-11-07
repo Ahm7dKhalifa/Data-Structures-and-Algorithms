@@ -28,7 +28,13 @@ b1 --> intro to algorithms books
 ==========================================
 5.good articles to explain Asymptotic notation from khanacademy
 ==========================================
-# - big-theta-notation :
+# - what are the factors that the running time of the algorithm depend on like 
+       - hardware 
+       - software
+  - the two ideas behind the Asymptotic notation
+       - the size of the inputs
+       - rate of growth
+  - big-theta-notation :
        - the running time of the algorithm is alwayes between two function f1 and f2 
        - average
   - big-o-notation :
