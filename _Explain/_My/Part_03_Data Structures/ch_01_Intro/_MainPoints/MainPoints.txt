@@ -1,0 +1,80 @@
+
+
+========================================
+1.what is data structures
+========================================
+-q/a
+1-https://www.javatpoint.com/data-structure-tutorial
+2-https://www.tutorialspoint.com/data_structures_algorithms/
+==========================================
+2. 
+2.1-Characteristics of a Data Structure
+2.2-Need for Data Structure
+==========================================
+-q/a
+1-https://www.tutorialspoint.com/data_structures_algorithms/data_structure_overview.htm
+2-https://www.quora.com/What-is-the-importance-of-data-structures
+3-https://www.quora.com/Why-are-data-structures-and-algorithms-so-important-in-computer-science
+4-https://www.javatpoint.com/data-structure-introduction
+
+- you can solve a problem with algorithms and data structures 
+and take only a few second :)
+or take a few hours :(
+for ex : when you have ahuge amount of data like 1 millions items and you want to sort them
+         - selection sort algorithm take n^2  = 1000000 * 1000000     = 1000000000000
+         - merge sort algorithm take n*log(n) = 1000000 * log(1000000)= 6000000
+==========================================
+3.Execution Time Cases
+==========================================
+q/a
+1-https://www.tutorialspoint.com/data_structures_algorithms/data_structure_overview.htm
+
+==========================================
+4.data types / basic operations
+==========================================
+q/a
+1-https://www.tutorialspoint.com/data_structures_algorithms/data_structures_basics.htm
+2-https://www.javatpoint.com/data-structure-introduction
+==========================================
+5.Data Structure Classification
+==========================================
+q/a
+1- https://www.javatpoint.com/data-structure-introduction
+2- https://knowshares.wordpress.com/2016/12/14/linear-vs-non-linear-datastructure/
+==========================================
+6.
+==========================================
+
+
+==========================================
+7.
+==========================================
+
+
+==========================================
+8.
+==========================================
+
+
+==========================================
+9.
+==========================================
+
+
+==========================================
+10.
+==========================================
+
+==========================================
+2.
+==========================================
+
+
+==========================================
+2.
+==========================================
+
+
+==========================================
+2.
+==========================================
