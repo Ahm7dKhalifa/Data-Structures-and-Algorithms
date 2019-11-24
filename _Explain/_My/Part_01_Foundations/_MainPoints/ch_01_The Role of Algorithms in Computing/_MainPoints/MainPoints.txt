@@ -51,10 +51,11 @@ b1 --> 10
 #q/a
 
 ==========================================
-9.
+9.How to Write an Algorithm 
 ==========================================
-
-
+#q/a
+1- https://www.wikihow.com/Write-an-Algorithm-in-Programming-Language
+2- https://www.programiz.com/article/algorithm-programming
 ==========================================
 10.
 ==========================================
