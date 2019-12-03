@@ -1,0 +1,87 @@
+
+
+========================================
+1.what is Linked List ?
+========================================
+-q/a
+1- https://www.javatpoint.com/singly-linked-list
+
+==========================================
+2.advantages of Linked List over arrays
+==========================================
+-q/a --> 1.1
+
+==========================================
+3.what is Singly linked list
+==========================================
+-q/a --> 1.1
+
+==========================================
+4.Complexity
+==========================================
+- q/a --> 1.1
+- q/a --> coursera-slides.pdf
+==========================================
+5.Inseration
+==========================================
+#q/a --> 1.1
+-----
+#q/a --> geeksforgeeks
+-https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/
+
+#q/a --> javatpoint 
+1-Insertion in singly linked list at beginning
+-https://www.javatpoint.com/insertion-in-singly-linked-list-at-beginning
+2-Insertion in singly linked list after specified Node
+-https://www.javatpoint.com/insertion-in-singly-linked-list-after-specified-node
+3-Insertion in singly linked list at the end
+-https://www.javatpoint.com/insertion-in-singly-linked-list-at-end
+==========================================
+6.Deletion
+==========================================
+#q/a
+
+#q/a -> _
+https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/
+https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/
+https://stackoverflow.com/questions/33987542/time-complexity-of-deletion-in-a-linked-list?rq=1
+
+#q/a -> javatpoint
+1-Deletion in singly linked list at beginning
+-https://www.javatpoint.com/deletion-in-singly-linked-list-at-beginning
+2-Deletion in singly linked list at the end
+-https://www.javatpoint.com/deletion-in-singly-linked-list-at-end
+3-Deletion in singly linked list after the specified node
+-https://www.javatpoint.com/deletion-in-singly-linked-list-after-specified-node
+==========================================
+7.
+==========================================
+
+
+==========================================
+8.
+==========================================
+
+
+==========================================
+9.
+==========================================
+
+
+==========================================
+10.
+==========================================
+
+==========================================
+2.
+==========================================
+
+
+==========================================
+2.
+==========================================
+
+
+==========================================
+2.
+==========================================
