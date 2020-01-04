@@ -1,0 +1,90 @@
+
+
+========================================
+1.what is tree ?
+========================================
+#q/a
+1-https://www.javatpoint.com/tree
+2- https://www.youtube.com/watch?v=rVKfofRnXvk&list=PLrW6ND2wzt4qGiB9xQIltEOv_dUFTFfq9
+==========================================
+2.Important Terms
+==========================================
+#q/a  --> 1.1
+#q/a 
+1-https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm
+-----------
+-level : 
+all childerns in the same height from the root node is called level
+-size :
+number of nodes in the tree
+-lenghth :
+ the path or the height or (num of levels) between the root and the far leaf
+==========================================
+3.Applications of tree data structure(why tree?)
+==========================================
+#q/a
+1-https://www.geeksforgeeks.org/applications-of-tree-data-structure/
+
+==========================================
+4.types of trees
+==========================================
+#q/a --> 1.1
+#q/a
+1-https://study.com/academy/lesson/trees-in-data-structures-methods-examples.html
+2-https://www.quora.com/What-are-the-types-of-trees-in-data-structures
+==========================================
+5.Tree Data Structure Implementation (code masry)
+==========================================
+#q/a
+1- https://www.youtube.com/watch?v=5NImEfD9tFc&index=2&list=PLrW6ND2wzt4qGiB9xQIltEOv_dUFTFfq9
+
+==========================================
+6.Tree Traversal Data Structure with Implementation (binary example)
+==========================================
+#q/a
+1-https://www.youtube.com/watch?v=mxxa-HfYGss&list=PLrW6ND2wzt4qGiB9xQIltEOv_dUFTFfq9&index=3
+2-https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+-----
+1- what is Traversal
+#q/a --> 6.1
+----
+2- types of algorthims uses for Tree Traversal :
+1- Depth First Traversals :
+(a) Inorder (Left, Root, Right) 
+(b) Preorder (Root, Left, Right) 
+(c) Postorder (Left, Right, Root) 
+2-Breadth First or Level Order Traversal
+
+
+==========================================
+7.
+==========================================
+
+
+==========================================
+8.
+==========================================
+
+
+==========================================
+9.
+==========================================
+
+
+==========================================
+10.
+==========================================
+
+==========================================
+11.
+==========================================
+
+
+==========================================
+12.
+==========================================
+
+
+==========================================
+13.
+==========================================
