@@ -6,16 +6,22 @@
      code ?
      o(n) ? 
 ========================================
-#q/a
+#resources
 1-https://www.javatpoint.com/searching-in-binary-search-tree
 2-https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+3-https://www.geeksforgeeks.org/complexity-analysis-of-binary-search/
+4-https://www.geeksforgeeks.org/complexity-different-operations-binary-tree-binary-search-tree-avl-tree/
 
-#o(n) = log2(n) = log(h) 
- where n = number of nodes 
-        h = number of levels
+#average time:
+log2(n) = h
+where n = number of nodes 
+      h = number of levels
 
-#the height of a skewed tree 
+#worst time :
+the height of a skewed tree :
 may become n and the time complexity of search and insert operation may become O(n).
+n = h
+
 ==========================================
 2.- inseration :
      how it work ?
@@ -23,8 +29,8 @@ may become n and the time complexity of search and insert operation may become O
      o(n) ? 
 ==========================================
 #q/a --> 1
-#q/a 
-1-https://www.javatpoint.com/data-structure-tutorial
+#resources 
+1-https://www.javatpoint.com/insertion-in-binary-search-tree
 
 ==========================================
 3.

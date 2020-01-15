@@ -15,7 +15,7 @@
 3.Operations on Binary Search Tree
 ==========================================
 #q/a --> 1.1
-#q/a --> subtobices
+#q/a --> sub-Topices
 
 ==========================================
 4.
