@@ -27,9 +27,9 @@
 1-https://www.javatpoint.com/rl-rotation-in-avl-tree
 
 ==========================================
-5.
+5.General
 ==========================================
-
+1- https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
 
 ==========================================
 6.
