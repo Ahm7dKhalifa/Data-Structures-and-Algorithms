@@ -41,11 +41,19 @@ q/a
 q/a
 1- https://www.javatpoint.com/data-structure-introduction
 2- https://knowshares.wordpress.com/2016/12/14/linear-vs-non-linear-datastructure/
-==========================================
-6.
-==========================================
 
 
+==========================================
+6.general important points for every data structure
+==========================================
+#1- what is it ?
+#2- needed / applications / (advantages - disadvantages)
+#3- types of it 
+#4- Operations of it 
+    - how every operation work ( concept )
+    - complexity ( time - space )
+    - code
+#5- representation of it in the memory
 ==========================================
 7.
 ==========================================
