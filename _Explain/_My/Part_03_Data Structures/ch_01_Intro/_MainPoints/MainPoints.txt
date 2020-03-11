@@ -50,7 +50,7 @@ q/a
 #2- needed / applications / (advantages - disadvantages)
 #3- types of it 
 #4- Operations of it 
-    - how every operation work ( concept )
+    - how every operation work ( concept - steps of its algorithm or pseudo code )
     - complexity ( time - space )
     - code
 #5- representation of it in the memory
