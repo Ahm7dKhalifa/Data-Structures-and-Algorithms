@@ -2,6 +2,7 @@
 
 ========================================
 1.what is b tree
+  - b tree role
 ========================================
 #resources :
 1- https://www.youtube.com/watch?v=C_q5ccN84C8
@@ -44,9 +45,13 @@
 #q/a --> 1
 
 ==========================================
-6.
+6.code 
 ==========================================
-
+#resources :
+1- https://www.geeksforgeeks.org/introduction-of-b-tree-2/
+2- https://www.geeksforgeeks.org/insert-operation-in-b-tree/
+3- https://www.geeksforgeeks.org/delete-operation-in-b-tree/
+4- https://github.com/phishman3579/java-algorithms-implementation/blob/master/src/com/jwetherell/algorithms/data_structures/BTree.java
 
 ==========================================
 7.
