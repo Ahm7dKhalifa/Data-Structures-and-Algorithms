@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/ xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0061)http://www.algolist.net/Data_structures/Binary_heap/Insertion -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>INSERTING AN ELEMENT INTO A HEAP (Java, C++) |  Algorithms and Data Structures</title>
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="keywords" content="How to insert an element into a heap? Recover heap property with sift up (trickle up) method. Implementations in Java and C++.">
+<meta name="description" content="">
+<link rel="stylesheet" href="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/style2.css" type="text/css">
+   
+<script type="text/javascript" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/prototype.js.download"></script>
+  <script>
+      function sendRequest() {
+        new Ajax.Request("/sendmailx.php", 
+          { 
+          method: 'post', 
+          postBody: 'message='+ $F('message')+'&visitor='+ $F('visitor')+'&visitormail='+ $F('visitormail')+'&ip=156.219.217.101&httpref=/Data_structures/Binary_heap/Insertion&httpagent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+          onComplete: showResponse 
+          });
+        }
+		
+		function sendDonate() {
+        new Ajax.Request("/donatex.php", 
+          { 
+          method: 'post', 
+          postBody: 'message=donation_click'+'&ip=156.219.217.101&httpref=/Data_structures/Binary_heap/Insertion&httpagent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+          onComplete: showDonate
+          });
+        }
+      function showResponse(req){
+        $('showx').innerHTML= req.responseText;
+        $('message').value = '';
+        $('visitor').value = '';
+        $('visitormail').value = '';
+      }	 
+	  
+	  function showDonate(req){
+	  }
+	  
+   </script>
+    <style type="text/css">
+<!--
+.table1 {
+  
+  margin: 0px 0 1em 0;
+  caption-side: top;
+  background-color:#F5F5F5;
+}
+.td1 {
+  border: 1px solid #cccccc;
+}
+.td2 {
+  border: 1px none #cccccc;
+}
+.style_sup_new {
+  color: #993300;
+  font-weight: bold;
+}
+-->
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+<div class="width">
+<div class="padding">
+<div class="banner">
+  <table border="0" height="100%" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td height="50" valign="bottom" align="left" nowrap="nowrap"><a href="http://www.algolist.net/" class="title1" style="color: #006CAB">Algorithms and Data Structures</a></td>
+    </tr>
+    <tr>
+      <td height="51" valign="top" align="left"><span class="title2" style="color: #E1771E">with implementations in Java and C++</span></td>
+    </tr>
+  </tbody></table>
+</div>
+</div>
+</div>
+<table style="background-color:#F5F5F5; margin-left:auto; margin-right:auto;"><tbody><tr><td>
+<div class="width"><div class="padding">
+  <div class="leftstrip">
+      <div class="leftmenu">
+          <a class="oolink" href="http://www.algolist.net/Data_structures/">Data structures</a><br>
+          <a class="oolink" href="http://www.algolist.net/Algorithms/">Algorithms</a><br>
+          <a class="oolink" href="http://www.algolist.net/Cpp/">C++</a><br>
+          <a class="oolink" href="http://www.algolist.net/Books/">Books</a><br>
+          <a class="oolink" href="http://forum.algolist.net/">Forum</a><br>            
+          <a class="oolink" href="http://www.algolist.net/Feedback">Feedback</a><br>  
+    </div>  
+    
+         
+        <div class="leftpp">
+       <div style="padding-top:15px;"><span style="text-align:center; font-size:12pt; font-family:Verdana; color: #006CAB; font-weight:bold; line-height:140%">
+   
+	<span style="font-size:14pt; color: #c95069">Support us</span><br><br><br>
+   
+    <span>to write<br>more tutorials</span><br><br><br><br>
+   
+	<span>to create new<br>visualizers</span><br><br><br> <br>
+    
+    to keep sharing<br>free knowledge <br>for you<br>
+    
+    <div style="padding-top:60px;">
+    
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="WJ7YPA5XHR5N8">
+<input type="image" onclick="sendDonate()" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/pixel.gif" width="1" height="1">
+<img alt="" border="0" style="margin-top:5px;" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/pp.png">
+</form>
+	<br><br><span style="font-size:10pt; color: #3F7F5F;">every dollar helps</span>	
+	</div>
+   
+   </span></div>                            
+        </div> 
+        
+        <div class="lefttop3"><strong>TOP3&nbsp;Articles</strong><br><a class="oolink" href="http://www.algolist.net/Algorithms/Sorting/Quicksort">Quicksort</a><br><a class="oolink" href="http://www.algolist.net/Algorithms/Graph/Undirected/Depth-first_search">Depth-first search</a><br><a class="oolink" href="http://www.algolist.net/Data_structures/Binary_search_tree">Binary search tree</a><br></div>               
+    </div>
+  <!--<div id="searchdiv">-->
+      <!--<form action="http://www.algolist.net/search.php" id="cse-search-box">-->
+        <!--<input type="hidden" name="cx" value="partner-pub-3923249955015497:4t0ah4wja3n" />-->
+        <!--<input type="hidden" name="cof" value="FORID:10" />-->
+        <!--<input type="hidden" name="ie" value="ISO-8859-1" />-->
+        <!--<input type="text" name="q" id="query_inp" size="114"/>-->
+        <!--<input type="submit" id="search_btn" name="sa" value="Search"/>-->
+      <!--</form>-->
+  <!--</div>-->
+<script type="text/javascript"></script>
+  <script>  
+  
+(function() { 
+if (navigator.appName == "Netscape") {
+  var ua = navigator.userAgent;
+    var re = new RegExp("Chrome");
+    if (re.exec(ua) == null) {
+    document.getElementById('searchdiv').style.cssText = 'margin-bottom:2px;';
+    document.getElementById('query_inp').size = 115;
+  }
+  else {
+    document.getElementById('searchdiv').style.cssText = 'margin-bottom:-14px;';
+    document.getElementById('query_inp').size = 114;
+  }
+  }
+else if (navigator.appName == "Microsoft Internet Explorer") {
+    var ua = navigator.userAgent;
+    var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(ua) != null)
+      rv = parseFloat(RegExp.$1)
+  if (rv != 8)
+    document.getElementById('searchdiv').style.cssText = 'margin-bottom:-18px;';  
+  if (rv == 8) {    
+    document.getElementById('searchdiv').style.cssText = 'margin-bottom:2px;';    
+    document.getElementById('query_inp').size = 114;
+  }
+}
+else if (navigator.appName == "Opera") {
+  document.getElementById('searchdiv').style.cssText = 'margin-bottom:-14px;';  
+  document.getElementById('query_inp').size = 117;
+}
+  
+var f = document.getElementById('cse-search-box'); if (!f) { f = document.getElementById('searchbox_demo'); } if (f && f.q) { var q = f.q; var n = navigator; var l = location; if (n.platform == 'Win32') { q.style.cssText = 'border: 1px solid #ddd; padding: 3px; padding-right:1px;'; } var b = function() { if (q.value == '') { q.style.background = '#FFFFFF url(http:\x2F\x2Fwww.google.com\x2Fcoop\x2Fintl\x2Fen\x2Fimages\x2Fgoogle_custom_search_watermark.gif) left no-repeat'; } }; var f = function() { q.style.background = '#ffffff'; }; q.onfocus = f; q.onblur = b; if (!/[&?]q=[^&]/.test(l.search)) { b(); } } })();   
+   </script>
+  <div class="content">
+      <div class="inside">
+      
+          <div class="ga">
+              Explore the English language on a new scale using <a href="https://linguazza.com/">AI-powered English language navigator</a>.
+            </div>
+        <style type="text/css">
+<!--
+p.MsoNormal {
+margin:0cm;
+margin-bottom:.0001pt;
+font-size:12.0pt;
+font-family:"Times New Roman";
+}
+-->
+</style>
+<h1>Inserting an element into a heap</h1>
+<p>In this article we examine the idea laying in the foundation of the heap data structure. We call it sifting, but you also may meet another terms, like "<span style="font-family:&#39;Times New Roman&#39;; font-size:12.0pt; ">trickle</span>", "heapify", "bubble" or "percolate".
+</p><h2>Insertion algorithm</h2>
+<p>Now, let us phrase general algorithm to insert a new element into a heap.</p>
+<ol>
+  <li>Add a new element to the end of an array;</li>
+  <li>Sift up the new element, while heap property is broken. Sifting is done as following: compare node's value with parent's value. If they are in wrong order, swap them.</li>
+</ol>
+<h3>Example</h3>
+<p>Insert -2 into a following heap:</p>
+<p><img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/binary-heap-insertion-source.png"></p>
+<p>Insert a new element to the end of the array:</p>
+
+<p><img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/binary-heap-insertion-1.png"></p>
+  <p>In the general case, after insertion, heap <span style="font-family:&#39;Times New Roman&#39;; font-size:12.0pt; ">property </span> near the new node is broken:</p>
+<p><img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/binary-heap-insertion-2.png"></p>
+ 
+  To restore heap property, algorithm <em>sifts up</em> the new element, by swapping it with its parent:
+  <p><img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/binary-heap-insertion-3.png"></p>
+  <p>Now heap property is broken at the root node:</p>
+  <p><img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/binary-heap-insertion-4.png"></p>
+  
+  Keep sifting:
+  <p><img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/binary-heap-insertion-5.png"></p>
+  <p>Heap property is fulfilled, sifting is over. </p>
+  
+<table width="100%" bgcolor="#999999" border="0" cellspacing="1">
+	<tbody>
+  <tr bgcolor="#ffffff">
+    <td><div align="center"><strong><span class="style2">Source heap</span></strong></div></td>
+    <td><div align="center"><strong><span class="style2">After -2 insertion</span></strong></div></td>
+    </tr>
+  <tr bgcolor="#ffffff">
+    <td><div align="center"><img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/binary-heap-insertion-source.png" alt=""></div></td>
+    <td><div align="center"><img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/binary-heap-insertion-final.png" alt=""></div></td>
+    </tr>
+  </tbody>
+</table>
+<h2>Complexity analysis</h2>
+<p>Complexity of the insertion operation is O(h), where <strong>h</strong> is heap's height. Taking into account completeness of the tree, O(h) = O(log n), where <strong>n </strong>is number of elements in a heap.</p>
+<h2>Code snippets</h2>
+<h3>Java implementation</h3>
+<p class="MsoNormal" style="text-autospace:none;"><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">public</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">class</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> BinaryMinHeap {</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">…</span></strong></p>
+<p class="MsoNormal" style="text-autospace:none;"><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong></p>
+<p class="MsoNormal" style="text-indent:35.4pt;text-autospace:none;"><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">public</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">void</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> insert(</span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">int</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> value) {</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">if</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> (</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">heapSize</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> == </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">data</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">.</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">length</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">)</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">throw</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">new</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> HeapException(</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#2A00FF; ">"Heap's underlying storage is  overflow"</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">);</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">else</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> {</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">heapSize</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">++;</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">data</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">[</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">heapSize</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> - 1] = value;</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; siftUp(</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">heapSize</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> - 1);</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">…</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> </span></p>
+<p class="MsoNormal" style="text-indent:35.4pt;text-autospace:none;"><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">private</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">void</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> siftUp(</span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">int</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> nodeIndex) {</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">int</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> parentIndex, tmp;</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">if</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> (nodeIndex != 0) {</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parentIndex = getParentIndex(nodeIndex);</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#7F0055; ">if</span></strong><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; "> (</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">data</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">[parentIndex] &gt; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">data</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">[nodeIndex]) {</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tmp = </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">data</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">[parentIndex];</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">data</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">[parentIndex] = </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">data</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">[nodeIndex];</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:#0000C0; ">data</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">[nodeIndex] = tmp;</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; siftUp(parentIndex);</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> </span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:black; ">}</span></p>
+<h3>C++ implementation</h3>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:blue; ">void</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> <span style="color:#010001; ">BinaryMinHeap</span>::<span style="color:#010001; ">siftUp</span>(<span style="color:blue; ">int</span> <span style="color:#010001; ">nodeIndex</span>) {</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">int</span> <span style="color:#010001; ">parentIndex</span>, <span style="color:#010001; ">tmp</span>;</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">if</span> (<span style="color:#010001; ">nodeIndex</span> !=  0) {</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#010001; ">parentIndex</span> = <span style="color:#010001; ">getParentIndex</span>(<span style="color:#010001; ">nodeIndex</span>);</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">if</span> (<span style="color:#010001; ">data</span>[<span style="color:#010001; ">parentIndex</span>] &gt; <span style="color:#010001; ">data</span>[<span style="color:#010001; ">nodeIndex</span>]) {</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#010001; ">tmp</span> = <span style="color:#010001; ">data</span>[<span style="color:#010001; ">parentIndex</span>];</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#010001; ">data</span>[<span style="color:#010001; ">parentIndex</span>]  = <span style="color:#010001; ">data</span>[<span style="color:#010001; ">nodeIndex</span>];</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#010001; ">data</span>[<span style="color:#010001; ">nodeIndex</span>]  = <span style="color:#010001; ">tmp</span>;</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#010001; ">siftUp</span>(<span style="color:#010001; ">parentIndex</span>);</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p class="MsoNormal"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">}</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:blue; ">void</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> <span style="color:#010001; ">BinaryMinHeap</span>::<span style="color:#010001; ">insert</span>(<span style="color:blue; ">int</span> <span style="color:#010001; ">value</span>) {</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">if</span> (<span style="color:#010001; ">heapSize</span> == <span style="color:#010001; ">arraySize</span>)</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">throw</span> <span style="color:#010001; ">string</span>(<span style="color:#A31515; ">"Heap's underlying storage is overflow"</span>);</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">else</span> {</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#010001; ">heapSize</span>++;</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#010001; ">data</span>[<span style="color:#010001; ">heapSize</span> -  1] = <span style="color:#010001; ">value</span>;</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#010001; ">siftUp</span>(<span style="color:#010001; ">heapSize</span> - 1);</span></p>
+<p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p class="MsoNormal"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">}</span></p>
+<img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/top-line.jpg">
+<div style="font-size:20px; font-family: Tahoma; padding-top:5px; margin-left:10px; margin-right:10px;">
+<table border="0" width="100%">	
+	<tbody><tr>
+    <td height="40" align="left">	  
+		Previous: <a class="nav" href="http://www.algolist.net/Data_structures/Binary_heap/Array-based_int_repr">Array-based binary heap internal representation</a>	</td>
+    </tr>
+    <tr>
+	<td height="40" align="right">
+		Next: <a class="nav" href="http://www.algolist.net/Data_structures/Binary_heap/Remove_minimum">Removing the minimum from a heap</a>	</td>
+	</tr>
+</tbody></table> 
+</div>
+<img src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/top-line.jpg">
+<br>
+<iframe src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/like.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:739px; height:30px;" allowtransparency="true"></iframe>
+     
+     <div style="margin-bottom:15px;">
+     
+     <h2>Contribute to AlgoList</h2>
+     
+     <p>Liked this tutorial? Please, consider making a donation. Contribute to help us keep sharing free knowledge and write new tutorials.</p>
+     
+     <span style="text-align: center; display:inline-block;">
+     
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="WJ7YPA5XHR5N8">
+<input type="image" onclick="sendDonate()" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/pixel.gif" width="1" height="1"><br>
+<img alt="" border="0" style="margin-top:5px;" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/pp.png">
+</form>
+	</span>
+	<p>Every dollar helps!</p>
+</div>
+     
+             <div style="padding-top: 10px;"><center><script src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/getjs.aspx"></script><script type="text/javascript" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/pixel"></script><script type="text/javascript" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/getjs.static.js.download"></script><div class="pp_placeholder" id="pp_ad_container_0_ph"></div><div class="pp_ad_container" id="pp_ad_container_0"><script type="text/javascript" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/GetAd.aspx"></script><a href="http://forum.algolist.net/"><img border="0" src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/have-a-question.png" alt="Have got a question? Ask on the FORUM and get answered by Algolist team."></a></div></center></div>                 
+        
+<!--LX!-->  
+        
+           
+  <form onsubmit="return false;" style="text-align:left">
+   
+   <!--?php
+$ipi = getenv("REMOTE_ADDR");
+$httprefi = getenv ("HTTP_REFERER");
+$httpagenti = getenv ("HTTP_USER_AGENT");
+?-->
+   
+   <input type="hidden" name="ip" value="&lt;?php echo $ipi ?&gt;">
+<input type="hidden" name="httpref" value="&lt;?php echo $httprefi ?&gt;">
+<input type="hidden" name="httpagent" value="&lt;?php echo $httpagenti ?&gt;">
+   
+   <table border="0">
+  <tbody><tr>
+    <td colspan="2">
+    <h2 class="real_h3">Leave a reply</h2>
+	<div id="showx">
+</div>
+
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="150px">Your name (optional):</td>
+    <td><input type="text" name="visitor" id="visitor" size="35"></td>
+  </tr>
+  <tr>
+    <td valign="top" width="150px">Your e-mail (optional):</td>
+    <td><input type="text" name="visitormail" id="visitormail" size="35"></td>
+  </tr>
+  <tr>
+    <td valign="top" width="150px">Message: </td>
+    <td><textarea type="text" name="message" id="message" rows="10" cols="60"></textarea></td>
+  </tr>
+  <tr>
+    <td valign="top" width="150px">&nbsp;</td>
+    <td><input type="submit" value="Send" onclick="sendRequest()">
+</td>
+  </tr>
+</tbody></table>
+  </form>
+      
+        
+           
+            
+    </div></div> </div></div></td></tr></tbody></table>        
+            <!--Google analytics-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./INSERTING AN ELEMENT INTO A HEAP (Java, C++) _ Algorithms and Data Structures_files/ga.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9311725-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+            <!--/Google analytics-->
+  
+</body></html>

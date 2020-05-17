@@ -1,0 +1,86 @@
+
+
+========================================
+1.What is Heap Data Structure ?
+  - Heaps can be of two types :
+========================================
+#resources :
+1- https://www.geeksforgeeks.org/heap-data-structure/
+
+==========================================
+2.How is Binary Heap represented?
+==========================================
+#Q/a --> 
+#resources :
+1- https://www.geeksforgeeks.org/binary-heap/
+
+==========================================
+3.- Applications of Heaps:
+==========================================
+#resources :
+1- https://www.quora.com/What-are-some-real-world-applications-of-a-heap-data-structure- 
+2- https://brilliant.org/wiki/heaps/
+3- https://tutorialspoint.dev/data-structure/heap-data-structure/applications-of-heap-data-structure
+4- https://webdocs.cs.ualberta.ca/~holte/T26/heap-uses.html
+
+==========================================
+4.heap tree operations : ( steps - code - complexity )
+- insert
+- delete 
+- heapify
+- extract : min or max
+==========================================
+#resources :
+1- https://www.tutorialspoint.com/data_structures_algorithms/heap_data_structure.htm
+2- https://www.programiz.com/dsa/heap-data-structure
+3- https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html
+4- https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/tutorial/
+5- https://runestone.academy/runestone/books/published/pythonds/Trees/BinaryHeapOperations.html
+6- https://en.wikipedia.org/wiki/Binary_heap
+
+7- https://www.geeksforgeeks.org/insertion-and-deletion-in-heaps/
+8- http://www.algolist.net/Data_structures/Binary_heap/Insertion
+9- http://www.algolist.net/Data_structures/Binary_heap/Remove_minimum
+10- https://en.wikipedia.org/wiki/Heap_(data_structure)
+==========================================
+5.
+==========================================
+
+
+==========================================
+6.
+==========================================
+
+
+==========================================
+7.
+==========================================
+
+
+==========================================
+8.
+==========================================
+
+
+==========================================
+9.
+==========================================
+
+
+==========================================
+10.
+==========================================
+
+==========================================
+11.
+==========================================
+
+
+==========================================
+12.
+==========================================
+
+
+==========================================
+13.
+==========================================
