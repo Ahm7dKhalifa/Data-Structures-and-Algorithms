@@ -1,0 +1,1071 @@
+/* Page structure */
+
+body {
+  margin: 0;
+  color: black;
+  background-color: white;
+  font: normal normal 17px/25px Roboto, Arial, sans-serif;
+}
+
+.container {
+  max-width: 920px;
+  margin: auto;
+  padding: 0;
+}
+
+.largeheader {
+  background-color: #ffe4e4;
+  color: black;
+  padding: 1em 1em 0.25em 1em;
+}
+
+.innercontent {
+  padding: 1.5em;
+}
+
+.footer {
+  background-color: #eef;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0.75em 1em;
+  font-size: .8em;
+  font-style: italic;
+  text-align: center;
+  clear: both;
+}
+
+body.coursenotes {
+  background-color: white;
+}
+
+body.coursenotes .container {
+  border: none;
+}
+
+#contents {
+  background: #c5ebe9;
+  font-size: 80%;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+#contents div:first-child {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 0;
+  padding: 3px 10px;
+  background-color: #46655f;
+  color: white;
+  text-shadow: 1px 1px 0 #766;
+}
+
+#contents div:nth-child(0n+2) {
+  padding: 5px 10px;
+}
+
+/* Headings */
+
+section.notetitle {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: .02ex;
+  line-height: 100%;
+  text-align: left;
+}
+
+h1 {
+  color: #113;
+  padding: 0 0 0.1em 0;
+  font-size: 70px;
+}
+
+section.notetitle h1 {
+  flex: 6 1 0;
+}
+
+h2 {
+  padding: 28px 0 0.12px 0;
+  margin-top: 0.8em;
+  font-size: 36px;
+  font-weight: bold;
+  color: #016;
+}
+
+.coursenotes h2 {
+  font-size: 48px;
+}
+
+h3 {
+  padding: 0.3em 0 0.15em 0;
+  margin-top: 0.7em;
+  font-size: 28px;
+  font-weight: bold;
+  color: #825;
+}
+
+.coursenotes h3 {
+  font-size: 33px;
+}
+
+h4 {
+  font-size: 24px;
+  padding: 0.1em 0;
+  color: green;
+  letter-spacing: .1ex;
+}
+
+/* Syntax Diagrams */
+
+.syntaxdiagrams > div {
+  font: bold 16px monospace;
+}
+svg.railroad-diagram path {
+  stroke-width: 3;
+  stroke: black;
+  fill: rgba(0,0,0,0);
+}
+svg.railroad-diagram text {
+  font: bold 14px monospace;
+  text-anchor: middle;
+}
+svg.railroad-diagram text.diagram-text {
+  font-size: 12px;
+}
+svg.railroad-diagram text.diagram-arrow {
+  font-size: 16px;
+}
+svg.railroad-diagram text.label {
+  text-anchor: start;
+}
+svg.railroad-diagram text.comment {
+  font: italic 12px monospace;
+}
+svg.railroad-diagram rect {
+  stroke-width: 3;
+  stroke: black;
+  fill: hsl(120,100%,90%);
+}
+svg.railroad-diagram path.diagram-text {
+  stroke-width: 3;
+  stroke: black;
+  fill: white;
+  cursor: help;
+}
+svg.railroad-diagram g.diagram-text:hover path.diagram-text {
+  fill: #eee;
+}
+
+/* Nice (generally) block-level semantic styles */
+
+.abstract, header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-style: italic;
+  margin-top: 10px;
+  color: #666;
+}
+
+.title {
+  font-family: Arial, sans-serif;
+  line-height: 1em;
+  font-size: 250%;
+  font-weight: bold;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.subtitle {
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 150%;
+  padding-bottom: 0.6em;
+  letter-spacing: .2ex;
+}
+
+.deco {
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 125%;
+  letter-spacing: 1.2ex;
+}
+
+.unitgoals, .summary {
+  background-color: #efe;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #171;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 0 0.2em;
+  margin: 0 0.1ex;
+}
+
+.nicebox {
+  border: 1px solid black;
+  background-color: #eff;
+  padding: 0 0.5em;
+  margin: 0 0.1ex;
+  border-radius: 3px;
+}
+
+.insetquote {
+  margin-left: 2em;
+  border-left: 3px solid #cccccc;
+  padding-left: 0.75em;
+}
+
+.hframe {
+  border-top: 2px solid #cbb;
+  border-bottom: 2px solid #cbb;
+  padding: 0;
+  margin: 2em 0;
+  line-height: 200%;
+}
+
+.overbar {
+  border-top: 1px solid black;
+}
+
+.hide {
+  display: none;
+}
+
+.description {
+  padding-left: 3em;
+  line-height: normal;
+}
+
+details, div.answer {
+  border: 1px solid #99cc99;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  font-size: 80%;
+  background-color: rgba(255, 255, 170, 0.3);
+}
+
+i.question {
+  font: italic 18px Georgia, "Times New Roman", serif;
+}
+
+div.scream {
+  margin: .2em auto;
+  padding: .6em;
+  width: 60%;
+  background-color: #900;
+  color: #ee0;
+  font-size: 300%;
+  line-height: 1.1em;
+  text-align: center;
+}
+
+div.semantics {
+  font-style: italic;
+  font-family: serif;
+  margin: 1em 40px;
+  white-space: pre; !important
+}
+
+.semfun, .semantics var {
+  font: bold 125% cursive;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+div.equations {
+  font-family: "Courier New", monospace;
+  font-size: 15	px;
+  line-height: 1.4em;
+  margin: 1em 40px;
+  white-space: pre; !important
+}
+
+pre {
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 15 px;
+  line-height: 1.4em;
+  margin: 1em 0px;
+  white-space: pre; !important
+}
+
+pre.prettyprint {
+  background: #202032;
+  color: #8ca68c;
+  font-size: 60%;
+  line-height: 1.4em;
+  margin: 1em 0;
+  border: 1px solid #333;
+  padding: 10px;
+  position: relative;
+  overflow-x: scroll;
+}
+
+pre.code {
+  background-color: rgba(167, 216, 233, 0.35);
+  padding: .75em  .75em .75em 1em;
+  border: 1px solid rgb(127, 164, 177);
+  white-space: pre;
+  overflow-x: scroll;
+}
+
+pre.big {
+  line-height: 1.2em;
+  font-size: 1.3em;
+}
+
+p.centered, div.centered {
+  text-align: center;
+}
+
+div.splitafter {
+  border-bottom: 6px solid #804040;
+  clear: both;
+}
+
+div.timeline {
+  margin: 0 120px;
+}
+
+div.timeline div.box {
+  text-align: center;
+  padding: 0.3em 1em;
+  background-color: #dff;
+}
+
+div.joiner {
+  clear: both;
+}
+
+canvas {
+  position: relative;
+}
+
+canvas.centeredAndBordered {
+  display: table;
+  background-color: white;
+  margin: 1px auto;
+  border: 1px solid grey;
+  -webkit-user-select: none;
+}
+
+.console {
+  white-space: pre;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  background-color: #444;
+  border: 12px solid black;
+  border-radius: 10px;
+  color: white;
+  font-size: 60%;
+  margin: 1em 0px;
+  padding: .75em .75em .75em 1em;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.console kbd {
+  color: yellow;
+  font-weight: 600;
+}
+
+.console span.error {
+  color: #ff8888;
+}
+
+.exercise {
+  margin: 1em 0px;
+  padding: 0.5em;
+  border: thin dotted #999;
+  background-color: #efa;
+  font-style: italic;
+}
+
+.example {
+  margin: 1em 0px;
+  padding: 0.5em 1em;
+  border: 1px dotted #862;
+  background-color: #fff7f7;
+}
+
+.answertitle {
+  background-color: #d8f0ff;
+  padding: 0.2em 0.1em 0.3em;
+  margin-top: 1.2em;
+  border-top: 2px solid #379;
+  font-size: 175%;
+  font-weight: bold;
+}
+
+.seal {
+  background-image: url('/~ray/images/lmuseal.jpg');
+  background-repeat: no-repeat;
+  background-position: center 1em
+}
+
+div.filename {
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0;
+  color: navy;
+}
+
+div.filename span {
+  font: normal 110% Arial, sans-serif;
+  margin: 0;
+  padding: 2px 16px;
+  letter-spacing: 0.12ex;
+  border-top: 1px solid #555;
+  border-right: 1px solid #555;
+  border-left: 1px solid #555;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #fef;
+}
+
+div.filename + pre.prettyprint {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.coursepagesectiontitle {
+  font-family: Avenir, 'Lato', Arial, sans-serif;
+  padding: 0.1em;
+  margin-top: 0.8em;
+  font-size: 180%;
+  font-weight: bold;
+}
+
+div.exam {
+  font-size: 90%;
+  width: 90%;
+}
+
+ol.exam-problems > li {
+  page-break-before:always;
+  padding-top: 1.5em;
+}
+
+ol.exam-problems li.no-new-page {
+  page-break-before:avoid;
+  padding-top: 1em;
+}
+
+ol.exam-problems li > ol {
+  list-style-type: lower-alpha;
+}
+
+ol.problem-group {
+  list-style-type: upper-alpha;
+}
+
+ol.problem-group > li {
+  font-weight: bold;
+}
+
+ol.problem-group .problem li:first-child {
+  margin-top: 1em;
+}
+
+ol.problem {
+  list-style-type: decimal;
+}
+
+ol.problem li {
+  font-weight: normal;
+}
+
+ol.problem li > ol {
+  list-style-type: lower-alpha;
+}
+
+p.commentary {
+  font: italic 90%/1.4em Georgia, serif;
+  border: 1px solid grey;
+  background-color: linen;
+  padding: 0.5em;
+}
+
+/* Nice inline-styles */
+
+sup {
+  position: relative;
+  left: 0px;
+  top: -5px;
+  font-size: 70%;
+}
+
+tt, code, kbd, var, td.inline-code {
+  font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+code {
+  font-size: 88%;
+  border: 1px solid rgba(200, 200, 255, 0.3);
+  background-color: rgba(230, 230, 255, 0.2);
+  font-style: normal;
+  padding: 1px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.lite {
+  background-color: #ffff00;
+}
+
+.greennote {
+  color:white;
+  background-color:green;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  font-family: arial, sans-serif;
+}
+
+.remark {
+  color:white;
+  background-color:green;
+  padding: 5px;
+  font-family: arial, sans-serif;
+}
+
+.due {
+  margin-left: 10px;
+  padding: 3px 10px;
+  border-radius: 8px;
+  background-color: rgb(161,222,253);
+}
+.bluebutton {
+  color:white;
+  background-color:blue;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  font-family: arial, sans-serif;
+  border-radius: 6px;
+}
+
+.derivation mark {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.register span {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.3em;
+  margin: 0px;
+}
+
+.commentary {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 85%;
+  font-style: italic;
+  color: #222;
+}
+
+img.lefttop {
+  float: left;
+  margin: 0 1em .5em 0;
+}
+
+img.righttop {
+  float: right;
+  margin: 0 0 .5em 1em;
+}
+
+dfn {
+  border: 1px dotted #ff5;
+  padding: 0 0.1em;
+  background-color: #ffffc8;
+  font-weight: bold;
+  font-style: normal;
+}
+
+span.rule {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-variant: small-caps;
+}
+
+span.big {
+  font-size: 130%;
+}
+
+span.name {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-variant: small-caps;
+  position: absolute;
+  left: 500px;
+  padding-top: 0.75em;
+}
+
+.topicbox {
+  display: inline-block;
+  background-color: #fee;
+  padding: 1em;
+  margin: 1ex;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 120%;
+  text-align: center;
+  width: 150px;
+  height: 80px;
+}
+
+/* Iframes */
+
+iframe {
+  border: 0;
+}
+
+/* Lists */
+
+ul.spaced li {
+  margin-bottom: 2.0ex;
+}
+
+ol.spaced li {
+  margin-bottom: 3.0ex;
+}
+
+ul.compressed li {
+  margin-bottom: 0.5ex;
+}
+
+ol.compressed li {
+  margin-bottom: 0.5ex;
+}
+
+ul.checks, .summary ul {
+  list-style: none;
+  margin-left: 1em;
+  padding-left: 1.25em;
+  text-indent: -1.25em;
+}
+
+ul.checks li:before, .summary ul li:before {
+  content: "✅";
+  display: block;
+  float: left;
+  width: 1.25em;
+}
+
+dl {
+  margin-left: 2em;
+}
+
+dt {
+  font-weight: bold;
+  margin-bottom: 0.4ex;
+  margin-top: 0.8ex;
+}
+
+dl.languagesemantics {
+  margin-left: 0;
+}
+
+dl.languagesemantics dt {
+  font-family: Menlo, Monaco, Consolas, monospace;
+  /*border: 1px solid grey;*/
+  background-color: #e6ffe6;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+dl.languagesemantics dd {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+dl dd.unknown {
+  color: #ddd;
+}
+
+ol.tutorialsteps li {
+  padding-top: 1em;
+  border-top: 2px solid red;
+  margin-bottom: 2.5em;
+}
+
+td > ul { /* Don't want lists in tables to be so padded */
+  margin: 0 1em 0 -1em;
+}
+
+/* Tables */
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+table.borderless, table.timeline, table.borderless tr, table.borderless td {
+  background-color: transparent;
+  border-width: 0px;
+}
+
+table.borderless th {
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+}
+
+table.emojis tbody tr td {
+  background-color: transparent;
+}
+
+table.emojis td:first-child {
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+table.timeline tr + tr {
+  border-top: 1px solid #505;
+}
+
+table.timeline td {
+  border: none;
+  padding-left: 4em;
+  background-color: transparent;
+}
+
+table.definitions {
+  margin-left: 40px;
+}
+
+table.definitions tr td:first-child {
+  padding-right: 40px;
+}
+
+table.fullwidth {
+  margin: 1em 0;
+  width: 100%;
+}
+
+table.opcode {
+  margin: 1em 0;
+  width: 100%;
+}
+
+table.awsinstances th[colspan] {
+  font-size: 60%;
+  padding: 1px;
+  text-transform: uppercase;
+}
+
+table.awsinstances td:first-child {
+  font: 225% bold Georgia;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table pre {
+  font-size: 1em;
+  line-height: 1.1em;
+  margin: .25em .5em;
+  white-space: pre; !important
+}
+
+table.reference pre {
+  margin: 0;
+  font-size: 12px;
+}
+
+table.plain td {
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 80%;
+  padding: 0 4px;
+  background-color: white;
+}
+
+table.rubric td {
+  font-size: 24px;
+  padding: 7px;
+  text-align: center;
+}
+
+table.requirementsrubric tr > td + td {
+  font-size: 24px;
+  padding: 7px;
+  text-align: center;
+}
+
+table.fillin {
+  margin-top: 1em;
+}
+
+table.fillin td, table.fillin th {
+  padding: 8px;
+  text-align: center;
+  font-size: 110%;
+}
+
+table.numeric td {
+  font-family: Menlo, Monaco, Consolas, monospace;
+  text-align: right;
+}
+
+table.codetable td {
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 80%;
+}
+
+table.optimization td {
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 16px;
+  padding: 4px 10px;
+  line-height: 1.25em;
+  white-space: pre;
+}
+
+table.bitstring {
+  border: 0;
+  background-color: transparent;
+}
+
+table.bitstring tr:first-child td {
+  border: 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+table.bitstring tr:nth-child(2) td {
+  border: 1px solid black;
+  font-family: monospace;
+  font-size: 120%;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+}
+
+table.array {
+  border: none;
+}
+
+table.array td:first-child {
+  border: none;
+  text-align: right;
+  background-color: white;
+}
+
+table.array td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table.array td.open {
+  border-top: none;
+  border-bottom: none;
+}
+
+tr.first-of-group {
+  border-top: 3px solid black;
+}
+
+table.mostlycentered td + td {
+  text-align: center;
+}
+
+table.matrix td {
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+table.matrix th {
+  vertical-align: middle;
+  padding: 2px 1ex;
+}
+
+table.worksheet {
+  margin-top: 1em;
+}
+
+table.worksheet td {
+  text-align: center;
+  padding: 2px 5ex;
+}
+
+table.code-first td:first-child {
+  font-size: 90%;
+  font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+div.flexy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 -10px;
+}
+
+table.card {
+  display: inline-table;
+  width: 250px;
+  margin: 0 10px 10px 10px;
+}
+
+table.biomorph {
+ margin-left: 0px;
+ margin-right: 0px;
+}
+
+table.biomorph td {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  background-color: #aff;
+  color: black;
+  padding: 0.4em;
+  border: 1px solid black;
+}
+
+td {
+  vertical-align: top;
+  background-color: #dff;
+  color: black;
+  padding: 0.2em 0.4em;
+  border: 1px solid black;
+}
+
+td.nowrap {
+  white-space: pre;
+}
+
+.opcode td, .opcode th {
+  font-size: 67%;
+  text-align: center;
+}
+
+.categorygroups th {
+  vertical-align: top;
+  text-align: left;
+}
+
+.categorygroups td {
+  font: 85% Menlo, Monaco, Consolas, monospace;
+}
+
+table.inferencerule {
+  margin: 0 0 1em 20px;
+}
+
+table.inferencerule td.top, table.inferencerule td.bottom {
+  font: 120% Menlo, Monaco, Consolas, monospace;
+  text-align: center;
+  padding: 0.1em 1em;
+}
+
+table.inferencerule td.name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+table.inferencerule var, var.inrule {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  padding: 0 .2ex .2ex .2ex;
+  background-color: transparent;
+}
+
+/* Blockquote Styles */
+
+blockquote {
+  background-color: #ffeeff;
+  border: 1px solid #f6f;
+  margin: 1em 0;
+  padding: .75em  .75em .75em 1em;
+  font-style: italic;
+}
+
+blockquote.warning, blockquote.info {
+  padding: 1em 1em 1em 5em;
+  background-repeat: no-repeat;
+  background-position: 1em 1em
+}
+
+blockquote.warning {
+  background-image: url('/~ray/images/warning-icon.png');
+  background-color: #ffddd5;
+  border: 1px solid #840;
+}
+
+blockquote.info {
+  background-image: url('/~ray/images/info-icon.png');
+  background-color: #d8e2ff;
+  border: 1px solid #228;
+}
+
+div.classworklabel {
+  margin-bottom: 0;
+  padding-left: 10px;
+  background-color: #992;
+  color: white;
+}
+
+blockquote.classwork {
+  background-color: #ffe;
+  border-left: 3px solid #992;
+  border-right: 3px solid #992;
+  border-bottom: 3px solid #992;
+  border-top: none;
+  margin-top: 0px;
+  font-style: normal;
+}
+
+blockquote p, blockquote ul, blockquote ol, blockquote li {
+  background-color: inherit;
+}
+
+/* Anchor Styles */
+
+a img {
+  border-style: none;
+  color: white;
+}
+
+a:link {
+  color: #006;
+}
+
+a:visited {
+  color: #646;
+}
+
+a:hover {
+  color: red;
+  background-color: #ffffcc;
+}
+
+@media screen and (min-width: 600px) {
+  pre.prettyprint {
+    font-size: 90%;
+  }
+
+  .console {
+    font-size: 92%;
+  }
+
+  .left {
+    float: left;
+    width: 48%;
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+  }
+}

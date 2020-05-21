@@ -1,0 +1,78 @@
+
+
+========================================
+1.what is Priority Queue ?
+========================================
+#resources :
+1- https://www.programiz.com/dsa/priority-queue
+2- https://www.geeksforgeeks.org/priority-queue-set-1-introduction/
+3- https://en.wikipedia.org/wiki/Priority_queue
+4- https://cs.lmu.edu/~ray/notes/pqueues/
+
+5- https://stackoverflow.com/questions/7294634/what-are-the-time-complexities-of-various-data-structures
+6- https://www.bigocheatsheet.com/
+==========================================
+2.Implementation or Representations of Priority Queue
+  - array
+  - linked list
+  - heap
+==========================================
+#q/a --> 1
+
+==========================================
+3.Applications of Priority Queue:
+==========================================
+#q/a --> 1
+
+==========================================
+4.Operations of Priority Queue:
+==========================================
+#q/a --> 1
+
+==========================================
+5.Compare Complexity Of Operations With Different Implementation
+==========================================
+#q/a --> 1
+
+==========================================
+6.code
+==========================================
+#q/a --> 
+#resources :
+1- https://www.geeksforgeeks.org/priority-queue-using-linked-list/
+2- https://www.hackerearth.com/practice/notes/heaps-and-priority-queues/
+3- https://bradfieldcs.com/algos/trees/priority-queues-with-binary-heaps/
+4- https://www.cs.cmu.edu/~rdriley/121/notes/heaps.html
+5- https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/
+==========================================
+7.
+==========================================
+
+
+==========================================
+8.
+==========================================
+
+
+==========================================
+9.
+==========================================
+
+
+==========================================
+10.
+==========================================
+
+==========================================
+11.
+==========================================
+
+
+==========================================
+12.
+==========================================
+
+
+==========================================
+13.
+==========================================
