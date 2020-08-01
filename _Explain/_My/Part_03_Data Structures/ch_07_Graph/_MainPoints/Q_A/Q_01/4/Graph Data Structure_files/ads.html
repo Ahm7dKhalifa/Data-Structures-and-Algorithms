@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://ads.programiz.com/728.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>728_1_Ad</title>
+</head>
+<body marginwidth="0" marginheight="0">
+	<div style="width: 728px; height: 90px;">
+		<a id="ad-link" href="https://www.programiz.com/learn-python?utm_campaign=pubgalaxy-backfill&amp;utm_source=programiz-unsold-ad&amp;utm_medium=728_90_v3_0" rel="nofollow" target="_blank"><img id="ad-img" src="./728_90_v3_0.png" alt=""></a>
+	</div>
+
+
+	<script type="text/javascript">
+    function getOS() {
+      var userAgent = window.navigator.userAgent,
+          platform = window.navigator.platform,
+          macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+          windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+          iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+          os = null;
+    
+      if (macosPlatforms.indexOf(platform) !== -1) {
+        os = 'Mac OS';
+      } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = 'iOS';
+      } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = 'Windows';
+      } else if (/Android/.test(userAgent)) {
+        os = 'Android';
+      } else if (!os && /Linux/.test(platform)) {
+        os = 'Linux';
+      }
+    
+      return os;
+    }
+
+    var playStoreUrl = "https://play.google.com/store/apps/details?id=com.programiz.learnpython&referrer=utm_source%3Dprogramiz-unsold-ad%26utm_campaign%3Dpubgalaxy-backfill",
+    appStoreUrl  = "https://apps.apple.com/app/apple-store/id1472188189?pt=120228772&ct=pubgalaxy-backfill",
+    desktopUrl = "https://www.programiz.com/learn-python?utm_campaign=pubgalaxy-backfill&utm_source=programiz-unsold-ad";
+
+		var random, img, filename;
+		random = Math.random() * 3;
+		img = document.getElementById("ad-img");
+
+		if (random < 1) {
+      filename = "728_90_v1_0";
+		}
+		else if (random < 2) {
+      filename = "728_90_v1_0";
+		}
+		else {
+      filename = "728_90_v3_0";
+		}
+    
+    img.src = "https://cdn.programiz.com/sites/tutorial2program/files/pics/" + filename + ".png";
+    desktopUrl = desktopUrl.concat("&utm_medium=" + filename);
+    playStoreUrl = playStoreUrl.concat("%26utm_medium%3D" + filename);
+    appStoreUrl = appStoreUrl.concat("-" + filename + "&mt=8");
+
+	  var os, a;
+    os = getOS();
+	  a = document.getElementById("ad-link");
+    if (os == 'Android') {
+        a.href = playStoreUrl;
+    }
+    else if (os == "iOS") {
+        a.href = appStoreUrl; 
+    }
+    else if (os == "Windows") {
+        a.href = desktopUrl;
+    }
+    else {
+      a.href = desktopUrl;
+    }
+	</script>
+</body></html>
