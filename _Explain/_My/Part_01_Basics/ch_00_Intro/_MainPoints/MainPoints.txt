@@ -21,11 +21,31 @@ b1 --> data structures and algorithms made easy
 1- https://www.tutorialspoint.com/computer_programming/computer_programming_variables.htm
 2- https://en.wikiversity.org/wiki/Types_and_variables
 3- b1 -> 17
-==========================================
-2.
-==========================================
 
 
+==========================================
+2.data types : 
+  - define date type : 
+      - type of value
+      - type of operation
+      - how it will be stored in memory
+  - type of data type :
+      - System-defined data types vs User defined
+        System-defined : built-in data type
+        User defined : custom data type than can contain mix between built-in data type
+      - primitive data types vs complex datatype
+        primitive : pure value ,, dose not contain any another data type or can not divide to smaller datatypes
+        complex  : can divid it to smaller primitive  datatypes
+  - Strong and weak typing programming languages ( statically typed languages  vs dynamically typed languages )
+==========================================
+#resources :
+1- b1 -> 17
+2- https://teachcomputerscience.com/programming-data-types/
+3- https://www.cs.uic.edu/~jbell/CourseNotes/ProgrammingConcepts/DataTypes.html
+4- https://searchapparchitecture.techtarget.com/definition/data-type
+5- https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages
+6- https://stackoverflow.com/questions/2690544/what-is-the-difference-between-a-strongly-typed-language-and-a-statically-typed
+7- https://en.wikibooks.org/wiki/Java_Programming/Primitive_Types
 ==========================================
 3.
 ==========================================
