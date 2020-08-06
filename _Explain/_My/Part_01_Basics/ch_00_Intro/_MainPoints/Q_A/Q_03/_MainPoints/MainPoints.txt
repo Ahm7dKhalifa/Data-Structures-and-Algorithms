@@ -1,0 +1,97 @@
+#########################
+book ref :
+b1 --> data structures and algorithms made easy
+#########################
+
+========================================
+1.what is data structures
+========================================
+-q/a
+1-https://www.javatpoint.com/data-structure-tutorial
+2-https://www.tutorialspoint.com/data_structures_algorithms/
+==========================================
+2. 
+2.1-Characteristics of a Data Structure
+2.2-Need for Data Structure
+==========================================
+-q/a
+1-https://www.tutorialspoint.com/data_structures_algorithms/data_structure_overview.htm
+2-https://www.quora.com/What-is-the-importance-of-data-structures
+3-https://www.quora.com/Why-are-data-structures-and-algorithms-so-important-in-computer-science
+4-https://www.javatpoint.com/data-structure-introduction
+
+- you can solve a problem with algorithms and data structures 
+and take only a few second :)
+or take a few hours :(
+for ex : when you have ahuge amount of data like 1 millions items and you want to sort them
+         - selection sort algorithm take n^2  = 1000000 * 1000000     = 1000000000000
+         - merge sort algorithm take n*log(n) = 1000000 * log(1000000)= 6000000
+==========================================
+3.Execution Time Cases
+==========================================
+q/a
+1-https://www.tutorialspoint.com/data_structures_algorithms/data_structure_overview.htm
+
+==========================================
+4.Data Types/Structure Classification 
+  - Primitive    vs   Non Primitive (linear - non linear)
+  - Primitive --- Composite types --- Other types --- Abstract data types
+==========================================
+q/a
+0- https://www.quora.com/How-would-you-define-data-structures-and-classify-them
+1- https://www.javatpoint.com/data-structure-introduction
+2- https://knowshares.wordpress.com/2016/12/14/linear-vs-non-linear-datastructure/
+3- https://www.csetutor.com/classification-of-data-structure-with-diagram/
+4- https://en.wikipedia.org/wiki/Data_type
+5- b1 --> 18
+===========================================
+5.List_of_data_structures
+===========================================
+#resources :
+1- https://en.wikipedia.org/wiki/List_of_data_structures
+2- https://www.freecodecamp.org/news/the-top-data-structures-you-should-know-for-your-next-coding-interview-36af0831f5e3/
+3- https://towardsdatascience.com/8-common-data-structures-every-programmer-must-know-171acf6a1a42
+4- https://ece.uwaterloo.ca/~dwharder/aads/Projects/List/
+==========================================
+6.general important points for every data structure
+==========================================
+#1- what is it ?
+#2- needed / applications / (advantages - disadvantages)
+#3- types of it 
+#4- Operations of it 
+    - how every operation work ( concept - steps of its algorithm or pseudo code )
+    - complexity ( time - space )
+    - code
+#5- representation of it in the memory
+==========================================
+7.
+==========================================
+
+
+==========================================
+8.
+==========================================
+
+
+==========================================
+9.
+==========================================
+
+
+==========================================
+10.
+==========================================
+
+==========================================
+2.
+==========================================
+
+
+==========================================
+2.
+==========================================
+
+
+==========================================
+2.
+==========================================
