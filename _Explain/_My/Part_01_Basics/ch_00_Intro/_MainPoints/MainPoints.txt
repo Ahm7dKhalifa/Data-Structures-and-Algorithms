@@ -48,9 +48,8 @@ b1 --> data structures and algorithms made easy
 7- https://en.wikibooks.org/wiki/Java_Programming/Primitive_Types
 
 ==========================================
-3.Data Structures
+3.
 ==========================================
- --> Has its MainPoints Folders
 
 ==========================================
 4.
