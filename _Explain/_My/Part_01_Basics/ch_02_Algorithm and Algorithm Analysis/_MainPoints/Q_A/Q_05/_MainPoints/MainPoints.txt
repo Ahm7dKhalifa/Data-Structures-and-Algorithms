@@ -1,32 +1,8 @@
 b1 --> intro to algorithms books
-
-========================================
-1.what is Asymptotic notation ?
-========================================
-#q/a
-#b1 --> 43
-
+b2 --> data structures and algorithms made easy
+b3 --> crack coding interview 
 ==========================================
-2.Asymptotic notation Types Diagram
-==========================================
-#q/a
-#b1 --> 45
-
-==========================================
-3.good video link to explain Asymptotic notation in arabic
-==========================================
-#https://www.youtube.com/watch?v=LNU2TwxjayA
-#q/a
-
-==========================================
-4.good video link to explain Asymptotic notation
-  - Rules of Asymptotic notation
-==========================================
-#https://www.youtube.com/watch?v=kS_gr2_-ws8&list=WL&index=149&t=0s
-#q/a
-
-==========================================
-5.good articles to explain Asymptotic notation from khanacademy
+0.good articles to explain Asymptotic notation from khanacademy
 ==========================================
 # - what are the factors that the running time of the algorithm depend on like 
        - hardware 
@@ -34,15 +10,17 @@ b1 --> intro to algorithms books
   - the two ideas behind the Asymptotic notation
        - the size of the inputs
        - rate of growth
-  - big-theta-notation :
-       - the running time of the algorithm is alwayes between two function f1 and f2 
-       - average
   - big-o-notation :
-       - the running time of the algorithm must be less than or equal function f
-       - maximum running time
+       - maximum running time ( maximum value that function can reached or the algorithm can take to solve the problem )
+       - worst case
+       - the running time of the algorithm must be less than or equal value of big-o-notation
   - big-omega-notation :
-       - the running time of the algorithm must be bigger than function f
-       - minimum running time	
+       - minimum running time ( minimum value that function can reached )
+       - best case
+       - the running time of the algorithm must be bigger than value of big-omega-notation
+  - big-theta-notation :
+       - the running time of the algorithm is alwayes between two function f1 ( big-omega ) and f2 ( big-o )
+       - average case
   - functions in asymptotic notation
 
 # 1- https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation
@@ -53,8 +31,38 @@ b1 --> intro to algorithms books
 
 #q/a
 
+========================================
+1.- what is Rate of Growth ?
+  - what is Asymptotic notation ?
+  - Commonly Used Rates of Growth
+========================================
+#resources :
+1- b1 --> 43
+2- b2 --> 21
+
 ==========================================
-6.good articles to explain Asymptotic notation in arabic
+2.Asymptotic notation Types 
+==========================================
+#q/a
+#b1 --> 45
+
+==========================================
+3.Rules of Asymptotic notation
+==========================================
+#resources
+1- https://www.youtube.com/watch?v=kS_gr2_-ws8&list=WL&index=149&t=0s
+2- b3 --> p53
+
+
+==========================================
+4.good video link to explain Asymptotic notation in arabic
+==========================================
+#https://www.youtube.com/watch?v=LNU2TwxjayA
+#q/a
+
+
+==========================================
+5.good articles to explain Asymptotic notation in arabic
 ==========================================
 #http://hosamabdelnaser.blogspot.com/2018/10/blog-post_37.html
 #q/a
