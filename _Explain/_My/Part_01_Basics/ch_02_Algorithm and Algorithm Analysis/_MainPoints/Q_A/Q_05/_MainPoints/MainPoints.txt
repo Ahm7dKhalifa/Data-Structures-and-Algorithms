@@ -32,14 +32,20 @@ b3 --> crack coding interview
 #q/a
 
 ========================================
-1.- what is Rate of Growth ?
-  - what is Asymptotic notation ?
+1.- what is Asymptotic notation ?
+  - what is Rate of Growth ?
   - Commonly Used Rates of Growth
+  - Does Asymptotic Analysis always work?
 ========================================
 #resources :
 1- b1 --> 43
 2- b2 --> 21
-
+3- http://www.cs.cornell.edu/courses/cs312/2004fa/lectures/lecture16.htm
+4- https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/
+5- https://deepai.org/machine-learning-glossary-and-terms/asymptotic-analysis
+6- https://www.freecodecamp.org/news/asymptotic-analysis-explained-with-pokemon-a-deep-dive-into-complexity-analysis-8bf4396804e0/
+7- https://www.tutorialspoint.com/data_structures_algorithms/asymptotic_analysis.htm
+8- http://hosamabdelnaser.blogspot.com/2018/10/blog-post_37.html
 ==========================================
 2.Asymptotic notation Types 
 ==========================================
@@ -60,12 +66,10 @@ b3 --> crack coding interview
 #https://www.youtube.com/watch?v=LNU2TwxjayA
 #q/a
 
+==========================================
+5.
+==========================================
 
-==========================================
-5.good articles to explain Asymptotic notation in arabic
-==========================================
-#http://hosamabdelnaser.blogspot.com/2018/10/blog-post_37.html
-#q/a
 
 ==========================================
 7.

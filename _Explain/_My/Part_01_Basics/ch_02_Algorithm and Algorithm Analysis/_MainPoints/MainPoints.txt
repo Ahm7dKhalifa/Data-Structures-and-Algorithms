@@ -36,14 +36,17 @@ b2 --> intro to algorithms
 1- b1 --> p24
 
 ==========================================
-5.What is Rate of Growth?
+5.Asymptotic notation?
 ==========================================
 --> has its main points folder
 
 ==========================================
-6.
+6.what is Amortize Analysis or Amortize time ?
+- Amortize Analysis Methods
 ==========================================
-
+#resources :
+1- https://www.tutorialspoint.com/Amortized-Analysis
+2- https://en.wikipedia.org/wiki/Amortized_analysis
 
 ==========================================
 7.
