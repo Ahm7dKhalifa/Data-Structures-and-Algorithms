@@ -46,6 +46,9 @@ b3 --> crack coding interview
 6- https://www.freecodecamp.org/news/asymptotic-analysis-explained-with-pokemon-a-deep-dive-into-complexity-analysis-8bf4396804e0/
 7- https://www.tutorialspoint.com/data_structures_algorithms/asymptotic_analysis.htm
 8- http://hosamabdelnaser.blogspot.com/2018/10/blog-post_37.html
+9- http://www.cs.columbia.edu/~mihalis/cs4231/Handouts/Asymptotics.pdf
+10- https://www.youtube.com/watch?v=LNU2TwxjayA
+11- https://stackoverflow.com/questions/49106531/big-o-what-are-the-constants-k-and-n0-in-the-formal-definition-of-the-order-of-a
 ==========================================
 2.Asymptotic notation Types 
 ==========================================
@@ -58,14 +61,19 @@ b3 --> crack coding interview
 #resources
 1- https://www.youtube.com/watch?v=kS_gr2_-ws8&list=WL&index=149&t=0s
 2- b3 --> p53
-
+3- https://www.youtube.com/watch?v=v4cd1O4zkGw
+4- https://www.youtube.com/watch?v=IR_S8BC8KI0
+5- https://www.youtube.com/watch?v=KXAbAa1mieU
 
 ==========================================
-4.good video link to explain Asymptotic notation in arabic
+4.how to calculate big o
+- n0 and c0
 ==========================================
-#https://www.youtube.com/watch?v=LNU2TwxjayA
-#q/a
-
+#resources :
+1- https://www.cs.auckland.ac.nz/courses/compsci220s1t/lectures/lecturenotes/GG-lectures/BigOhexamples.pdf
+2- https://stackoverflow.com/questions/1369366/what-is-an-easy-way-for-finding-c-and-n-when-proving-the-big-oh-of-an-algorithm
+3- https://stackoverflow.com/questions/51341571/calculating-c-and-n0
+4- https://math.stackexchange.com/questions/1086879/big-o-notation-how-to-calculate-c-and-k
 ==========================================
 5.
 ==========================================
