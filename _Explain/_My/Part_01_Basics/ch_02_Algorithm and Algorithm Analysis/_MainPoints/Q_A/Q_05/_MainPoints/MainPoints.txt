@@ -61,9 +61,10 @@ b3 --> crack coding interview
 #resources
 1- https://www.youtube.com/watch?v=kS_gr2_-ws8&list=WL&index=149&t=0s
 2- b3 --> p53
-3- https://www.youtube.com/watch?v=v4cd1O4zkGw
-4- https://www.youtube.com/watch?v=IR_S8BC8KI0
-5- https://www.youtube.com/watch?v=KXAbAa1mieU
+3- b2 --> p30
+4- https://www.youtube.com/watch?v=v4cd1O4zkGw
+5- https://www.youtube.com/watch?v=IR_S8BC8KI0
+6- https://www.youtube.com/watch?v=KXAbAa1mieU
 
 ==========================================
 4.how to calculate big o
