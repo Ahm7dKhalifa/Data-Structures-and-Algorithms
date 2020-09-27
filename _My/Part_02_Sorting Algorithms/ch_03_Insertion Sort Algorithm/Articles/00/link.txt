@@ -1,6 +1,0 @@
-https://www.studytonight.com/data-structures/insertion-sorting
-----------------
-- how it work ?
-- code
-- big(o)
-- space

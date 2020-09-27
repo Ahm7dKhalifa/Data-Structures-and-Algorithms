@@ -1,7 +1,0 @@
-https://www.studytonight.com/data-structures/merge-sort
-----------------
-- Divide and Conquer
-- how merage algorithm work ?
-- code
-- big(o)
-- space

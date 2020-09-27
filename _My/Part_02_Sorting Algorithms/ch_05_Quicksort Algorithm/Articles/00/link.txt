@@ -1,6 +1,0 @@
-https://www.programiz.com/dsa/quick-sort
-----------------
-- how it work ?
-- code
-- big(o)
-- space
