@@ -1,15 +1,23 @@
-
+#########################
+book ref :
+b1 --> data structures and algorithms made easy
+#########################
 
 ========================================
 1.what is array ?
 ========================================
 -q/a
 1- https://www.javatpoint.com/data-structure-array
-
+2- b2 --> p76
+3- https://www.guru99.com/array-data-structure.html
+4- https://beginnersbook.com/2018/10/data-structure-array/
 ==========================================
 2.Need of using Array ?
+- advantages && advantages 
 ==========================================
-- q/a --> 1.1
+#resources :
+1- q/a --> 1.1
+2- b1 --> p76
 
 ==========================================
 3.Time Complexity
@@ -18,6 +26,7 @@
 - Access --> Read and Write
 - Insert new Item at certain Position --> Add with Shift
 - Delete Item at certain Position ------> Delete With Shift
+
 ==========================================
 4.Memory Allocation of the array
 ==========================================
@@ -25,11 +34,20 @@
 
 ==========================================
 5.Accessing Elements of an array
+- Why Constant Time for Accessing Array Elements ?
+- Index Equation
 ==========================================
--q/a --> 1.1
+#resources :
+1- q/a --> 1.1
+2- b1 --> p76
 
 ==========================================
 6.2d-array
+- what is 2d array ?
+- How to declare 2D Array ?
+- How do we access data in a 2D array ?
+- Mapping 2D array to 1D array to store it into the memory ?
+- Calculating the Address of the random element of a 2D array ?
 ==========================================
 - q/a
 1- https://www.javatpoint.com/data-structure-2d-array
