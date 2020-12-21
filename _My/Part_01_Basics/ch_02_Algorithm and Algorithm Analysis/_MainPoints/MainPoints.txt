@@ -6,11 +6,22 @@ b2 --> intro to algorithms
 
 ========================================
 1.what is algorithm ?
+- how to write algorithms ( english text - Pseudo Code - Flowchart )
+- algorithm examples
 ========================================
 #resources :
 1- b1 --> p19
 2- b2 --> ch_01
-
+3- https://www.wikihow.com/Write-an-Algorithm-in-Programming-Language
+4- https://www.programiz.com/dsa/algorithm
+5- https://www.tutorialspoint.com/programming_methodologies/programming_methodologies_writing_the_algorithm.htm
+6- https://dev.to/flippedcoding/how-to-write-pseudo-code-2jfe
+7- http://sofia.cs.vt.edu/cs1114-ebooklet/chapter4.html
+8- https://study.com/academy/lesson/what-is-an-algorithm-in-programming-definition-examples-analysis.html
+9- https://www.thecrazyprogrammer.com/2018/04/difference-between-flowchart-and-algorithm.html
+10- https://slideplayer.com/slide/4009962/
+11- https://dev.to/yogeswaran79/ways-of-writing-an-algorithm-2io3
+12- https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/building-algorithms/a/expressing-an-algorithm
 ==========================================
 2.two main criteria for judging the merits of algorithms:
 ==========================================
