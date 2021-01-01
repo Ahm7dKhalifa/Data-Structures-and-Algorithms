@@ -21,21 +21,33 @@
 ==========================================
 - q/a --> 1.1
 - q/a --> coursera-slides.pdf
+
 ==========================================
 5.Inseration
 ==========================================
 #q/a --> 1.1
 -----
 #q/a --> geeksforgeeks
--https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/
+1- https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/
+2- https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/
 
 #q/a --> javatpoint 
-1-Insertion in singly linked list at beginning
--https://www.javatpoint.com/insertion-in-singly-linked-list-at-beginning
-2-Insertion in singly linked list after specified Node
--https://www.javatpoint.com/insertion-in-singly-linked-list-after-specified-node
-3-Insertion in singly linked list at the end
--https://www.javatpoint.com/insertion-in-singly-linked-list-at-end
+1-https://www.javatpoint.com/insertion-in-singly-linked-list-at-beginning
+2-https://www.javatpoint.com/insertion-in-singly-linked-list-after-specified-node
+3-https://www.javatpoint.com/insertion-in-singly-linked-list-at-end
+
+#q/a --> programiz
+1- https://www.programiz.com/dsa/linked-list-operations
+
+#q/a --> codeforwin
+1- https://codeforwin.org/2015/09/c-program-to-insert-node-at-end-of-singly-linked-list.html
+
+#q/a --> walkingtechie
+1- https://walkingtechie.blogspot.com/2018/12/inserting-node-in-singly-linked-list.html
+
+#q/a --> quora
+1- https://www.quora.com/What-is-the-time-complexity-of-inserting-a-node-into-a-linked-list
+
 ==========================================
 6.Deletion
 ==========================================
@@ -53,6 +65,7 @@ https://stackoverflow.com/questions/33987542/time-complexity-of-deletion-in-a-li
 -https://www.javatpoint.com/deletion-in-singly-linked-list-at-end
 3-Deletion in singly linked list after the specified node
 -https://www.javatpoint.com/deletion-in-singly-linked-list-after-specified-node
+
 ==========================================
 7.
 ==========================================
