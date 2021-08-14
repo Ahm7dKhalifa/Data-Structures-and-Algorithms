@@ -48,6 +48,11 @@
 #q/a --> quora
 1- https://www.quora.com/What-is-the-time-complexity-of-inserting-a-node-into-a-linked-list
 
+#q/a --> codeproject
+1- https://www.codeproject.com/Articles/1104980/Linked-List-Implementation-in-Csharp
+
+#q/a --> btechsmartclass
+1- http://www.btechsmartclass.com/data_structures/single-linked-list.html
 ==========================================
 6.Deletion
 ==========================================

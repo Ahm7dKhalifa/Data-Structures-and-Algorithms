@@ -21,6 +21,7 @@
 #q/a -->_
 1-https://dzone.com/articles/linked-list-implementation-in-c
 2-https://tdimov.wordpress.com/2013/03/10/doubly-linked-list-c-implementation/
+3-https://www.c-sharpcorner.com/article/linked-list-implementation-in-c-sharp/
 ==========================================
 3.
 ==========================================
