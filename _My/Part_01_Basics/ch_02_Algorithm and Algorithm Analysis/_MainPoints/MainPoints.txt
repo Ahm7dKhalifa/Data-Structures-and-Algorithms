@@ -22,7 +22,8 @@ b2 --> intro to algorithms
 10- https://slideplayer.com/slide/4009962/
 11- https://dev.to/yogeswaran79/ways-of-writing-an-algorithm-2io3
 12- https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/building-algorithms/a/expressing-an-algorithm
-==========================================
+13- https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/building-algorithms/a/the-building-blocks-of-algorithms
+=========================================
 2.two main criteria for judging the merits of algorithms:
 ==========================================
 #resources :
