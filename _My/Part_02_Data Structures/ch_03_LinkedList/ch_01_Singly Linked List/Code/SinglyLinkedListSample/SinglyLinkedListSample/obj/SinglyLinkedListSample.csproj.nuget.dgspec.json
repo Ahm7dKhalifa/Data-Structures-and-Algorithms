@@ -1,21 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "E:\\_Programming\\_Data Structures\\LinkedList\\SinglyLinkedList\\SinglyLinkedListSample\\SinglyLinkedListSample\\SinglyLinkedListSample.csproj": {}
+    "D:\\Github\\Data-Structures-and-Algorithms\\_My\\Part_02_Data Structures\\ch_03_LinkedList\\ch_01_Singly Linked List\\Code\\SinglyLinkedListSample\\SinglyLinkedListSample\\SinglyLinkedListSample.csproj": {}
   },
   "projects": {
-    "E:\\_Programming\\_Data Structures\\LinkedList\\SinglyLinkedList\\SinglyLinkedListSample\\SinglyLinkedListSample\\SinglyLinkedListSample.csproj": {
+    "D:\\Github\\Data-Structures-and-Algorithms\\_My\\Part_02_Data Structures\\ch_03_LinkedList\\ch_01_Singly Linked List\\Code\\SinglyLinkedListSample\\SinglyLinkedListSample\\SinglyLinkedListSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\_Programming\\_Data Structures\\LinkedList\\SinglyLinkedList\\SinglyLinkedListSample\\SinglyLinkedListSample\\SinglyLinkedListSample.csproj",
+        "projectUniqueName": "D:\\Github\\Data-Structures-and-Algorithms\\_My\\Part_02_Data Structures\\ch_03_LinkedList\\ch_01_Singly Linked List\\Code\\SinglyLinkedListSample\\SinglyLinkedListSample\\SinglyLinkedListSample.csproj",
         "projectName": "SinglyLinkedListSample",
-        "projectPath": "E:\\_Programming\\_Data Structures\\LinkedList\\SinglyLinkedList\\SinglyLinkedListSample\\SinglyLinkedListSample\\SinglyLinkedListSample.csproj",
-        "packagesPath": "C:\\Users\\options\\.nuget\\packages\\",
-        "outputPath": "E:\\_Programming\\_Data Structures\\LinkedList\\SinglyLinkedList\\SinglyLinkedListSample\\SinglyLinkedListSample\\obj\\",
+        "projectPath": "D:\\Github\\Data-Structures-and-Algorithms\\_My\\Part_02_Data Structures\\ch_03_LinkedList\\ch_01_Singly Linked List\\Code\\SinglyLinkedListSample\\SinglyLinkedListSample\\SinglyLinkedListSample.csproj",
+        "packagesPath": "C:\\Users\\ahmed.abdelaziz\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\Data-Structures-and-Algorithms\\_My\\Part_02_Data Structures\\ch_03_LinkedList\\ch_01_Singly Linked List\\Code\\SinglyLinkedListSample\\SinglyLinkedListSample\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\options\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ahmed.abdelaziz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -54,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

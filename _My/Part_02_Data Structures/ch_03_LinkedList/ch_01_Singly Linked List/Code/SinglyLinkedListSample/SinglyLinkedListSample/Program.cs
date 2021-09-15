@@ -84,6 +84,14 @@ namespace SinglyLinkedListSample
             linkedList5.Traverse();
             linkedList5.DeleteThisNode(nodeThree);
             linkedList5.Traverse();
+
+            SinglyLinkedList<int> linkedList6 = new SinglyLinkedList<int>();
+            linkedList6.InsertNewNodeAtLast(1);
+            linkedList6.InsertNewNodeAtLast(2);
+            linkedList6.InsertNewNodeAtLast(2);
+            linkedList6.Traverse();
+            linkedList6.FindFirstNodeContain(2);
+
         }
     }
 }

@@ -71,7 +71,6 @@ namespace SinglyLinkedListSample
 
         #endregion
 
-
         #region Delete Operations
         public Node<T> DeleteTheNodeAtFirst()
         {
@@ -240,8 +239,28 @@ namespace SinglyLinkedListSample
             
             return TheNodeBeforeCurrentLastNode;
         }
-      
+
         #endregion
+
+        #region Search
+        public Node<T> FindFirstNodeContain(T value)
+        {
+            Node<T> currentNode = GetFirstNode();
+
+            while(currentNode != null)
+            {
+                //if (currentNode.Data == value)
+                if (EqualityComparer<T>.Default.Equals(currentNode.Data, value))
+                    return currentNode;
+                else
+                    currentNode = currentNode.Next;
+            }
+
+            return null;
+        }
+        #endregion
+
+        #region Shared Functions
         private Node<T> CreateNewNode(T data)
         {
             return new Node<T>(data);
@@ -261,17 +280,19 @@ namespace SinglyLinkedListSample
             else
                 return true;
         }
-
         private bool IsFirstNode(Node<T> currentNode)
         {
             return Header.Next == currentNode; 
         }
-
         private bool IsLastNode(Node<T> currentNode)
         {
             return Tail.Next == currentNode;
         }
+
         #endregion
+
+        #endregion
+
 
     }
 }
