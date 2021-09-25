@@ -34,6 +34,7 @@ namespace DoublyLinkedListSample
             {
                 Node<T> currentFirstNode = GetFirstNode();
                 NewNode.Next = currentFirstNode;
+                currentFirstNode.Previous = NewNode;
                 Header = NewNode;
             }
 
@@ -90,84 +91,84 @@ namespace DoublyLinkedListSample
         #endregion
 
         #region Delete Operations
-        public Node<T> DeleteTheNodeAtFirst()
+        public Node<T> DeleteNodeAtFirst()
         {
             Node<T> firstNode = GetFirstNode();
-            if(firstNode != null)
+            if(!IsLinkedListIsEmpty())
             {
-                Header.Next = firstNode.Next;
-                firstNode.Next = null;
+                if (IsLinkedListContainOnlyOneNode())
+                {
+                    Header = Tail = null;
+                    firstNode.Previous = firstNode.Next = null;
+                }
+                else
+                {
+                    Node<T> secondNode = firstNode.Next;
+                    Header = secondNode;
+                    secondNode.Previous = null;
+                    firstNode.Next = null;
+                }
                 this.Count--;
                 Console.WriteLine("The Node At First Is Deleted Successfully... ");
             }
-
             return firstNode;
         }
 
-        public Node<T> DeleteTheNodeAtLast()
+        public Node<T> DeleteNodeAtLast()
         {
-            if (CheckIfLinkedListContainOnlyOneNode())
+            if (!IsLinkedListIsEmpty())
             {
-               var firstNode = DeleteTheNodeAtFirst();
-                Header.Next = null;
-                Tail.Next = null;
-                this.Count--;
-                return firstNode;
+                if (IsLinkedListContainOnlyOneNode())
+                {
+                    var firstNode = DeleteNodeAtFirst();
+                    return firstNode;
+                }
+                else
+                {
+                    Node<T> LastNode = GetLastNode();
+                    Node<T> SecondLastNode = LastNode.Previous;
+                    if (SecondLastNode != null)
+                    {
+                        Tail = SecondLastNode;
+                        SecondLastNode.Next = null;
+                        LastNode.Previous = null;
+                        this.Count--;
+                        Console.WriteLine("The Node At Last Is Deleted Successfully... ");   
+                    }
+                    return LastNode;
+                }             
             }
-
-            Node<T> TheNodeBeforeCurrentLastNode = GetTheNodeBeforeCurrentLastNode();
-            if (TheNodeBeforeCurrentLastNode != null)
+            else
             {
-                Tail.Next = TheNodeBeforeCurrentLastNode;
-                TheNodeBeforeCurrentLastNode.Next = null;
-                this.Count--;
-                Console.WriteLine("The Node At Last Is Deleted Successfully... ");
+                return null;
             }
-
-            return TheNodeBeforeCurrentLastNode;
         }
 
         public Node<T> DeleteThisNode(Node<T> currentNode)
         {
             if (IsFirstNode(currentNode))
-                return DeleteTheNodeAtFirst();
+                return DeleteNodeAtFirst();
 
             if (IsLastNode(currentNode))
-                return DeleteTheNodeAtLast();
+                return DeleteNodeAtLast();
 
-            Node<T> TheNodePrevious = GetThePreviousNode(currentNode);
-            Node<T> TheNodeAfter = TheNodePrevious.Next.Next;
+            Node<T> previousNode = currentNode.Previous;
+            Node<T> nextNode = currentNode.Next;
 
-            TheNodePrevious.Next = TheNodeAfter;
+            previousNode.Next = nextNode;
+            nextNode.Previous = previousNode;
+           
             currentNode = null;
             this.Count--;
+           
             Console.WriteLine("The Node Is Deleted Successfully... ");
             return currentNode;
-        }
-
-        public Node<T> DeleteTheNodeAtPosition(int position)
-        {
-            if (position == 0)
-                return DeleteTheNodeAtFirst();
-
-            if(position == Count - 1)
-                return DeleteTheNodeAtLast();
-
-            Node<T> TheNodePreviousThisPosition = GetTheNodeAtPosition(position - 1);
-            Node<T> TheCurrentNode = TheNodePreviousThisPosition.Next;
-            Node<T> TheNodeAfterThisPosition = TheNodePreviousThisPosition.Next.Next;
-
-            TheNodePreviousThisPosition.Next = TheNodeAfterThisPosition;
-            TheCurrentNode = null;
-            this.Count--;
-            Console.WriteLine("The Node At Position : " + position + " Is Deleted Successfully... ");
-            return TheCurrentNode;
         }
 
         #endregion
 
         #region Read Operations
-        public void Traverse()
+        public void TraverseFromHeaderToTail()
         {
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Linked List Items :");
@@ -190,6 +191,27 @@ namespace DoublyLinkedListSample
         }
 
 
+        public void TraverseFromTailToHeader()
+        {
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("Linked List Items :");
+
+            if (!IsLinkedListIsEmpty())
+            {
+
+                Node<T> currentNode = GetLastNode();
+                //Console.WriteLine(currentNode.Data);
+                while (currentNode != null)
+                {
+                    Console.WriteLine(currentNode.Data);
+                    currentNode = currentNode.Previous;
+                }
+
+            }
+
+            Console.WriteLine("End");
+            Console.WriteLine("---------------------------------------");
+        }
         public Node<T> GetTheNodeAtPosition(int position)
         {
             Node<T> currrentNode = GetFirstNode();
@@ -225,7 +247,7 @@ namespace DoublyLinkedListSample
 
         private Node<T> GetThePreviousNode(Node<T> currentNode)
         {
-            if (!CheckIfLinkedListContainOnlyOneNode())
+            if (!IsLinkedListContainOnlyOneNode())
             {
                 Node<T> ThePreviousNode = GetFirstNode();
 
@@ -240,22 +262,10 @@ namespace DoublyLinkedListSample
             return null;
         }
 
-        private Node<T> GetTheNodeBeforeCurrentLastNode()
+        private Node<T> GetThePreviousNodeOfCurrentLastNode()
         {
-            Node<T> TheNodeBeforeCurrentLastNode = null;
-            Node<T> currentNode = GetFirstNode();
-
-            if (currentNode == null || currentNode.Next == null)
-                return currentNode;
-
-            while (currentNode.Next != null && currentNode.Next.Next != null)
-            {
-                currentNode = currentNode.Next;
-            }
-
-            TheNodeBeforeCurrentLastNode = currentNode;
-            
-            return TheNodeBeforeCurrentLastNode;
+          Node<T> lastNode = Tail;
+          return  lastNode.Previous;
         }
 
         #endregion
@@ -297,20 +307,21 @@ namespace DoublyLinkedListSample
                 return false;
             */
         }
-        private bool CheckIfLinkedListContainOnlyOneNode()
+        private bool IsLinkedListContainOnlyOneNode()
         {
-            if (Header.Next != null && Header.Next.Next != null)
-                return false;
-            else
+            Node<T> FirstNode = GetFirstNode();
+            if(FirstNode != null && FirstNode.Next == null)
                 return true;
+            else
+                return false;
         }
         private bool IsFirstNode(Node<T> currentNode)
         {
-            return Header.Next == currentNode; 
+            return Header == currentNode; 
         }
         private bool IsLastNode(Node<T> currentNode)
         {
-            return Tail.Next == currentNode;
+            return Tail == currentNode;
         }
 
         #endregion
