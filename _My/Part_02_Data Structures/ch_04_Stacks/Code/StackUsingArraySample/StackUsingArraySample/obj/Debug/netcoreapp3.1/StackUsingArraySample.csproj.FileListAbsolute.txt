@@ -1,0 +1,13 @@
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\bin\Debug\netcoreapp3.1\StackUsingArraySample.exe
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\bin\Debug\netcoreapp3.1\StackUsingArraySample.deps.json
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\bin\Debug\netcoreapp3.1\StackUsingArraySample.runtimeconfig.json
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\bin\Debug\netcoreapp3.1\StackUsingArraySample.runtimeconfig.dev.json
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\bin\Debug\netcoreapp3.1\StackUsingArraySample.dll
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\bin\Debug\netcoreapp3.1\StackUsingArraySample.pdb
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\obj\Debug\netcoreapp3.1\StackUsingArraySample.csprojAssemblyReference.cache
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\obj\Debug\netcoreapp3.1\StackUsingArraySample.AssemblyInfoInputs.cache
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\obj\Debug\netcoreapp3.1\StackUsingArraySample.AssemblyInfo.cs
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\obj\Debug\netcoreapp3.1\StackUsingArraySample.csproj.CoreCompileInputs.cache
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\obj\Debug\netcoreapp3.1\StackUsingArraySample.dll
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\obj\Debug\netcoreapp3.1\StackUsingArraySample.pdb
+E:\_Programming\Data-Structures-and-Algorithms\_My\Part_02_Data Structures\ch_04_Stacks\Code\StackUsingArraySample\StackUsingArraySample\obj\Debug\netcoreapp3.1\StackUsingArraySample.genruntimeconfig.cache
