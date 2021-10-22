@@ -7,24 +7,25 @@ namespace StackUsingArraySample
 {
     public class Stack<T>
     {
-        T[] StackArray;
-        int TopIndex = 0;
-        public Stack(int arraySize = 1000)
+        T[] Array;
+        int Top = -1;
+
+        public Stack(int arraySize = 10)
         {
-            StackArray = new T[arraySize];
+            Array = new T[arraySize];
         }
 
         public void Push(T newElement)
         {
             if (IsStackFull())
             {
-                throw new StackOverFlowException("Stack Is Full Exception ,, When You Try Inserted Value : " + newElement);
+                throw new StackOverFlowException("Stack Is Full Exception");
             }
-            
-            StackArray[TopIndex] = newElement;
-            TopIndex++;
-        }
 
+            Top++;
+            Array[Top] = newElement;
+            
+        }
         public T Pop()
         {
             if (IsStackEmpty())
@@ -32,21 +33,26 @@ namespace StackUsingArraySample
                 throw new StackUnderFlowException("Stack Is Empty Exception");
             }
            
-            T lastElement = StackArray[TopIndex];
-            TopIndex--;
-            return lastElement;
-               
-            
+            T lastElement = Array[Top];
+            Top--;
+            return lastElement;    
         }
+        public T Peek()
+        {
+            if (IsStackEmpty())
+            {
+                throw new StackUnderFlowException("Stack Is Empty Exception");
+            }
 
+            return Array[Top];
+        }
         private bool IsStackFull()
         {
-            return TopIndex == StackArray.Length;
+            return Top >= Array.Length - 1;
         }
-
         private bool IsStackEmpty()
         {
-            return TopIndex == 0;
+            return Top == -1;
         }
     }
 }
